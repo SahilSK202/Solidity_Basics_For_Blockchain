@@ -1,0 +1,527 @@
+{
+    "contracts": {
+        "d:/MyBooks/BlockChain/Tutorial/01_Variables.sol": {
+            "variables": {
+                "abi": [
+                    {
+                        "constant": true,
+                        "inputs": [],
+                        "name": "myuInt",
+                        "outputs": [
+                            {
+                                "name": "",
+                                "type": "uint8"
+                            }
+                        ],
+                        "payable": false,
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "constant": false,
+                        "inputs": [],
+                        "name": "decrement",
+                        "outputs": [],
+                        "payable": false,
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "constant": false,
+                        "inputs": [],
+                        "name": "changeVal",
+                        "outputs": [],
+                        "payable": false,
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "constant": true,
+                        "inputs": [],
+                        "name": "myStr",
+                        "outputs": [
+                            {
+                                "name": "",
+                                "type": "string"
+                            }
+                        ],
+                        "payable": false,
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "constant": true,
+                        "inputs": [],
+                        "name": "myBool",
+                        "outputs": [
+                            {
+                                "name": "",
+                                "type": "bool"
+                            }
+                        ],
+                        "payable": false,
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "constant": false,
+                        "inputs": [],
+                        "name": "increment",
+                        "outputs": [],
+                        "payable": false,
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    }
+                ],
+                "devdoc": {
+                    "methods": {}
+                },
+                "evm": {
+                    "bytecode": {
+                        "linkReferences": {},
+                        "object": "6000805461ffff1916905560c0604052600560808190527f736168696c00000000000000000000000000000000000000000000000000000060a0908152610049916001919061005c565b5034801561005657600080fd5b506100f7565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061009d57805160ff19168380011785556100ca565b828001600101855582156100ca579182015b828111156100ca5782518255916020019190600101906100af565b506100d69291506100da565b5090565b6100f491905b808211156100d657600081556001016100e0565b90565b6102ba806101066000396000f3fe6080604052600436106100775763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416630a7deebe811461007c5780632baeceb7146100a757806357c78f36146100be5780635a455c1c146100d35780636deecdbe1461015d578063d09de08a14610186575b600080fd5b34801561008857600080fd5b5061009161019b565b6040805160ff9092168252519081900360200190f35b3480156100b357600080fd5b506100bc6101a4565b005b3480156100ca57600080fd5b506100bc6101be565b3480156100df57600080fd5b506100e86101db565b6040805160208082528351818301528351919283929083019185019080838360005b8381101561012257818101518382015260200161010a565b50505050905090810190601f16801561014f5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34801561016957600080fd5b50610172610268565b604080519115158252519081900360200190f35b34801561019257600080fd5b506100bc610276565b60005460ff1681565b6000805460ff19811660ff91821660001901909116179055565b6000805461ff001981166101009182900460ff1615909102179055565b60018054604080516020600284861615610100026000190190941693909304601f810184900484028201840190925281815292918301828280156102605780601f1061023557610100808354040283529160200191610260565b820191906000526020600020905b81548152906001019060200180831161024357829003601f168201915b505050505081565b600054610100900460ff1681565b6000805460ff8082166001011660ff1990911617905556fea165627a7a7230582022e7e88d9e02cccc8cff36ef7e40dfdd4ef4917410712d64ae8203fcd1bf5e740029",
+                        "opcodes": "PUSH1 0x0 DUP1 SLOAD PUSH2 0xFFFF NOT AND SWAP1 SSTORE PUSH1 0xC0 PUSH1 0x40 MSTORE PUSH1 0x5 PUSH1 0x80 DUP2 SWAP1 MSTORE PUSH32 0x736168696C000000000000000000000000000000000000000000000000000000 PUSH1 0xA0 SWAP1 DUP2 MSTORE PUSH2 0x49 SWAP2 PUSH1 0x1 SWAP2 SWAP1 PUSH2 0x5C JUMP JUMPDEST POP CALLVALUE DUP1 ISZERO PUSH2 0x56 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH2 0xF7 JUMP JUMPDEST DUP3 DUP1 SLOAD PUSH1 0x1 DUP2 PUSH1 0x1 AND ISZERO PUSH2 0x100 MUL SUB AND PUSH1 0x2 SWAP1 DIV SWAP1 PUSH1 0x0 MSTORE PUSH1 0x20 PUSH1 0x0 KECCAK256 SWAP1 PUSH1 0x1F ADD PUSH1 0x20 SWAP1 DIV DUP2 ADD SWAP3 DUP3 PUSH1 0x1F LT PUSH2 0x9D JUMPI DUP1 MLOAD PUSH1 0xFF NOT AND DUP4 DUP1 ADD OR DUP6 SSTORE PUSH2 0xCA JUMP JUMPDEST DUP3 DUP1 ADD PUSH1 0x1 ADD DUP6 SSTORE DUP3 ISZERO PUSH2 0xCA JUMPI SWAP2 DUP3 ADD JUMPDEST DUP3 DUP2 GT ISZERO PUSH2 0xCA JUMPI DUP3 MLOAD DUP3 SSTORE SWAP2 PUSH1 0x20 ADD SWAP2 SWAP1 PUSH1 0x1 ADD SWAP1 PUSH2 0xAF JUMP JUMPDEST POP PUSH2 0xD6 SWAP3 SWAP2 POP PUSH2 0xDA JUMP JUMPDEST POP SWAP1 JUMP JUMPDEST PUSH2 0xF4 SWAP2 SWAP1 JUMPDEST DUP1 DUP3 GT ISZERO PUSH2 0xD6 JUMPI PUSH1 0x0 DUP2 SSTORE PUSH1 0x1 ADD PUSH2 0xE0 JUMP JUMPDEST SWAP1 JUMP JUMPDEST PUSH2 0x2BA DUP1 PUSH2 0x106 PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x4 CALLDATASIZE LT PUSH2 0x77 JUMPI PUSH4 0xFFFFFFFF PUSH29 0x100000000000000000000000000000000000000000000000000000000 PUSH1 0x0 CALLDATALOAD DIV AND PUSH4 0xA7DEEBE DUP2 EQ PUSH2 0x7C JUMPI DUP1 PUSH4 0x2BAECEB7 EQ PUSH2 0xA7 JUMPI DUP1 PUSH4 0x57C78F36 EQ PUSH2 0xBE JUMPI DUP1 PUSH4 0x5A455C1C EQ PUSH2 0xD3 JUMPI DUP1 PUSH4 0x6DEECDBE EQ PUSH2 0x15D JUMPI DUP1 PUSH4 0xD09DE08A EQ PUSH2 0x186 JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST CALLVALUE DUP1 ISZERO PUSH2 0x88 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH2 0x91 PUSH2 0x19B JUMP JUMPDEST PUSH1 0x40 DUP1 MLOAD PUSH1 0xFF SWAP1 SWAP3 AND DUP3 MSTORE MLOAD SWAP1 DUP2 SWAP1 SUB PUSH1 0x20 ADD SWAP1 RETURN JUMPDEST CALLVALUE DUP1 ISZERO PUSH2 0xB3 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH2 0xBC PUSH2 0x1A4 JUMP JUMPDEST STOP JUMPDEST CALLVALUE DUP1 ISZERO PUSH2 0xCA JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH2 0xBC PUSH2 0x1BE JUMP JUMPDEST CALLVALUE DUP1 ISZERO PUSH2 0xDF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH2 0xE8 PUSH2 0x1DB JUMP JUMPDEST PUSH1 0x40 DUP1 MLOAD PUSH1 0x20 DUP1 DUP3 MSTORE DUP4 MLOAD DUP2 DUP4 ADD MSTORE DUP4 MLOAD SWAP2 SWAP3 DUP4 SWAP3 SWAP1 DUP4 ADD SWAP2 DUP6 ADD SWAP1 DUP1 DUP4 DUP4 PUSH1 0x0 JUMPDEST DUP4 DUP2 LT ISZERO PUSH2 0x122 JUMPI DUP2 DUP2 ADD MLOAD DUP4 DUP3 ADD MSTORE PUSH1 0x20 ADD PUSH2 0x10A JUMP JUMPDEST POP POP POP POP SWAP1 POP SWAP1 DUP2 ADD SWAP1 PUSH1 0x1F AND DUP1 ISZERO PUSH2 0x14F JUMPI DUP1 DUP3 SUB DUP1 MLOAD PUSH1 0x1 DUP4 PUSH1 0x20 SUB PUSH2 0x100 EXP SUB NOT AND DUP2 MSTORE PUSH1 0x20 ADD SWAP2 POP JUMPDEST POP SWAP3 POP POP POP PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 RETURN JUMPDEST CALLVALUE DUP1 ISZERO PUSH2 0x169 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH2 0x172 PUSH2 0x268 JUMP JUMPDEST PUSH1 0x40 DUP1 MLOAD SWAP2 ISZERO ISZERO DUP3 MSTORE MLOAD SWAP1 DUP2 SWAP1 SUB PUSH1 0x20 ADD SWAP1 RETURN JUMPDEST CALLVALUE DUP1 ISZERO PUSH2 0x192 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH2 0xBC PUSH2 0x276 JUMP JUMPDEST PUSH1 0x0 SLOAD PUSH1 0xFF AND DUP2 JUMP JUMPDEST PUSH1 0x0 DUP1 SLOAD PUSH1 0xFF NOT DUP2 AND PUSH1 0xFF SWAP2 DUP3 AND PUSH1 0x0 NOT ADD SWAP1 SWAP2 AND OR SWAP1 SSTORE JUMP JUMPDEST PUSH1 0x0 DUP1 SLOAD PUSH2 0xFF00 NOT DUP2 AND PUSH2 0x100 SWAP2 DUP3 SWAP1 DIV PUSH1 0xFF AND ISZERO SWAP1 SWAP2 MUL OR SWAP1 SSTORE JUMP JUMPDEST PUSH1 0x1 DUP1 SLOAD PUSH1 0x40 DUP1 MLOAD PUSH1 0x20 PUSH1 0x2 DUP5 DUP7 AND ISZERO PUSH2 0x100 MUL PUSH1 0x0 NOT ADD SWAP1 SWAP5 AND SWAP4 SWAP1 SWAP4 DIV PUSH1 0x1F DUP2 ADD DUP5 SWAP1 DIV DUP5 MUL DUP3 ADD DUP5 ADD SWAP1 SWAP3 MSTORE DUP2 DUP2 MSTORE SWAP3 SWAP2 DUP4 ADD DUP3 DUP3 DUP1 ISZERO PUSH2 0x260 JUMPI DUP1 PUSH1 0x1F LT PUSH2 0x235 JUMPI PUSH2 0x100 DUP1 DUP4 SLOAD DIV MUL DUP4 MSTORE SWAP2 PUSH1 0x20 ADD SWAP2 PUSH2 0x260 JUMP JUMPDEST DUP3 ADD SWAP2 SWAP1 PUSH1 0x0 MSTORE PUSH1 0x20 PUSH1 0x0 KECCAK256 SWAP1 JUMPDEST DUP2 SLOAD DUP2 MSTORE SWAP1 PUSH1 0x1 ADD SWAP1 PUSH1 0x20 ADD DUP1 DUP4 GT PUSH2 0x243 JUMPI DUP3 SWAP1 SUB PUSH1 0x1F AND DUP3 ADD SWAP2 JUMPDEST POP POP POP POP POP DUP2 JUMP JUMPDEST PUSH1 0x0 SLOAD PUSH2 0x100 SWAP1 DIV PUSH1 0xFF AND DUP2 JUMP JUMPDEST PUSH1 0x0 DUP1 SLOAD PUSH1 0xFF DUP1 DUP3 AND PUSH1 0x1 ADD AND PUSH1 0xFF NOT SWAP1 SWAP2 AND OR SWAP1 SSTORE JUMP INVALID LOG1 PUSH6 0x627A7A723058 KECCAK256 0x22 0xe7 0xe8 DUP14 SWAP15 MUL 0xcc 0xcc DUP13 SELFDESTRUCT CALLDATASIZE 0xef PUSH31 0x40DFDD4EF4917410712D64AE8203FCD1BF5E74002900000000000000000000 ",
+                        "sourceMap": "143:1:0:-;121:23;;-1:-1:-1;;560:26:0;;;828:29;95:766;828:29;;95:766;828:29;;;;;;;;;;121:23;;828:29;;:::i;:::-;;95:766;8:9:-1;5:2;;;30:1;27;20:12;5:2;95:766:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;95:766:0;;;-1:-1:-1;95:766:0;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;"
+                    },
+                    "deployedBytecode": {
+                        "linkReferences": {},
+                        "object": "6080604052600436106100775763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416630a7deebe811461007c5780632baeceb7146100a757806357c78f36146100be5780635a455c1c146100d35780636deecdbe1461015d578063d09de08a14610186575b600080fd5b34801561008857600080fd5b5061009161019b565b6040805160ff9092168252519081900360200190f35b3480156100b357600080fd5b506100bc6101a4565b005b3480156100ca57600080fd5b506100bc6101be565b3480156100df57600080fd5b506100e86101db565b6040805160208082528351818301528351919283929083019185019080838360005b8381101561012257818101518382015260200161010a565b50505050905090810190601f16801561014f5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b34801561016957600080fd5b50610172610268565b604080519115158252519081900360200190f35b34801561019257600080fd5b506100bc610276565b60005460ff1681565b6000805460ff19811660ff91821660001901909116179055565b6000805461ff001981166101009182900460ff1615909102179055565b60018054604080516020600284861615610100026000190190941693909304601f810184900484028201840190925281815292918301828280156102605780601f1061023557610100808354040283529160200191610260565b820191906000526020600020905b81548152906001019060200180831161024357829003601f168201915b505050505081565b600054610100900460ff1681565b6000805460ff8082166001011660ff1990911617905556fea165627a7a7230582022e7e88d9e02cccc8cff36ef7e40dfdd4ef4917410712d64ae8203fcd1bf5e740029",
+                        "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x4 CALLDATASIZE LT PUSH2 0x77 JUMPI PUSH4 0xFFFFFFFF PUSH29 0x100000000000000000000000000000000000000000000000000000000 PUSH1 0x0 CALLDATALOAD DIV AND PUSH4 0xA7DEEBE DUP2 EQ PUSH2 0x7C JUMPI DUP1 PUSH4 0x2BAECEB7 EQ PUSH2 0xA7 JUMPI DUP1 PUSH4 0x57C78F36 EQ PUSH2 0xBE JUMPI DUP1 PUSH4 0x5A455C1C EQ PUSH2 0xD3 JUMPI DUP1 PUSH4 0x6DEECDBE EQ PUSH2 0x15D JUMPI DUP1 PUSH4 0xD09DE08A EQ PUSH2 0x186 JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST CALLVALUE DUP1 ISZERO PUSH2 0x88 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH2 0x91 PUSH2 0x19B JUMP JUMPDEST PUSH1 0x40 DUP1 MLOAD PUSH1 0xFF SWAP1 SWAP3 AND DUP3 MSTORE MLOAD SWAP1 DUP2 SWAP1 SUB PUSH1 0x20 ADD SWAP1 RETURN JUMPDEST CALLVALUE DUP1 ISZERO PUSH2 0xB3 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH2 0xBC PUSH2 0x1A4 JUMP JUMPDEST STOP JUMPDEST CALLVALUE DUP1 ISZERO PUSH2 0xCA JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH2 0xBC PUSH2 0x1BE JUMP JUMPDEST CALLVALUE DUP1 ISZERO PUSH2 0xDF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH2 0xE8 PUSH2 0x1DB JUMP JUMPDEST PUSH1 0x40 DUP1 MLOAD PUSH1 0x20 DUP1 DUP3 MSTORE DUP4 MLOAD DUP2 DUP4 ADD MSTORE DUP4 MLOAD SWAP2 SWAP3 DUP4 SWAP3 SWAP1 DUP4 ADD SWAP2 DUP6 ADD SWAP1 DUP1 DUP4 DUP4 PUSH1 0x0 JUMPDEST DUP4 DUP2 LT ISZERO PUSH2 0x122 JUMPI DUP2 DUP2 ADD MLOAD DUP4 DUP3 ADD MSTORE PUSH1 0x20 ADD PUSH2 0x10A JUMP JUMPDEST POP POP POP POP SWAP1 POP SWAP1 DUP2 ADD SWAP1 PUSH1 0x1F AND DUP1 ISZERO PUSH2 0x14F JUMPI DUP1 DUP3 SUB DUP1 MLOAD PUSH1 0x1 DUP4 PUSH1 0x20 SUB PUSH2 0x100 EXP SUB NOT AND DUP2 MSTORE PUSH1 0x20 ADD SWAP2 POP JUMPDEST POP SWAP3 POP POP POP PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 RETURN JUMPDEST CALLVALUE DUP1 ISZERO PUSH2 0x169 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH2 0x172 PUSH2 0x268 JUMP JUMPDEST PUSH1 0x40 DUP1 MLOAD SWAP2 ISZERO ISZERO DUP3 MSTORE MLOAD SWAP1 DUP2 SWAP1 SUB PUSH1 0x20 ADD SWAP1 RETURN JUMPDEST CALLVALUE DUP1 ISZERO PUSH2 0x192 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH2 0xBC PUSH2 0x276 JUMP JUMPDEST PUSH1 0x0 SLOAD PUSH1 0xFF AND DUP2 JUMP JUMPDEST PUSH1 0x0 DUP1 SLOAD PUSH1 0xFF NOT DUP2 AND PUSH1 0xFF SWAP2 DUP3 AND PUSH1 0x0 NOT ADD SWAP1 SWAP2 AND OR SWAP1 SSTORE JUMP JUMPDEST PUSH1 0x0 DUP1 SLOAD PUSH2 0xFF00 NOT DUP2 AND PUSH2 0x100 SWAP2 DUP3 SWAP1 DIV PUSH1 0xFF AND ISZERO SWAP1 SWAP2 MUL OR SWAP1 SSTORE JUMP JUMPDEST PUSH1 0x1 DUP1 SLOAD PUSH1 0x40 DUP1 MLOAD PUSH1 0x20 PUSH1 0x2 DUP5 DUP7 AND ISZERO PUSH2 0x100 MUL PUSH1 0x0 NOT ADD SWAP1 SWAP5 AND SWAP4 SWAP1 SWAP4 DIV PUSH1 0x1F DUP2 ADD DUP5 SWAP1 DIV DUP5 MUL DUP3 ADD DUP5 ADD SWAP1 SWAP3 MSTORE DUP2 DUP2 MSTORE SWAP3 SWAP2 DUP4 ADD DUP3 DUP3 DUP1 ISZERO PUSH2 0x260 JUMPI DUP1 PUSH1 0x1F LT PUSH2 0x235 JUMPI PUSH2 0x100 DUP1 DUP4 SLOAD DIV MUL DUP4 MSTORE SWAP2 PUSH1 0x20 ADD SWAP2 PUSH2 0x260 JUMP JUMPDEST DUP3 ADD SWAP2 SWAP1 PUSH1 0x0 MSTORE PUSH1 0x20 PUSH1 0x0 KECCAK256 SWAP1 JUMPDEST DUP2 SLOAD DUP2 MSTORE SWAP1 PUSH1 0x1 ADD SWAP1 PUSH1 0x20 ADD DUP1 DUP4 GT PUSH2 0x243 JUMPI DUP3 SWAP1 SUB PUSH1 0x1F AND DUP3 ADD SWAP2 JUMPDEST POP POP POP POP POP DUP2 JUMP JUMPDEST PUSH1 0x0 SLOAD PUSH2 0x100 SWAP1 DIV PUSH1 0xFF AND DUP2 JUMP JUMPDEST PUSH1 0x0 DUP1 SLOAD PUSH1 0xFF DUP1 DUP3 AND PUSH1 0x1 ADD AND PUSH1 0xFF NOT SWAP1 SWAP2 AND OR SWAP1 SSTORE JUMP INVALID LOG1 PUSH6 0x627A7A723058 KECCAK256 0x22 0xe7 0xe8 DUP14 SWAP15 MUL 0xcc 0xcc DUP13 SELFDESTRUCT CALLDATASIZE 0xef PUSH31 0x40DFDD4EF4917410712D64AE8203FCD1BF5E74002900000000000000000000 ",
+                        "sourceMap": "95:766:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;121:23;;8:9:-1;5:2;;;30:1;27;20:12;5:2;121:23:0;;;;;;;;;;;;;;;;;;;;;;;452:55;;8:9:-1;5:2;;;30:1;27;20:12;5:2;452:55:0;;;;;;645:63;;8:9:-1;5:2;;;30:1;27;20:12;5:2;645:63:0;;;;828:29;;8:9:-1;5:2;;;30:1;27;20:12;5:2;828:29:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:100:-1;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;828:29:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;560:26;;8:9:-1;5:2;;;30:1;27;20:12;5:2;560:26:0;;;;;;;;;;;;;;;;;;;;;;344:55;;8:9:-1;5:2;;;30:1;27;20:12;5:2;344:55:0;;;;121:23;;;;;;:::o;452:55::-;491:6;:8;;-1:-1:-1;;491:8:0;;;;;;-1:-1:-1;;491:8:0;;;;;;;452:55::o;645:63::-;694:6;;;-1:-1:-1;;684:16:0;;694:6;;;;;;;693:7;684:16;;;;;;645:63::o;828:29::-;;;;;;;;;;;;;;;-1:-1:-1;;828:29:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;560:26::-;;;;;;;;;:::o;344:55::-;383:6;:8;;;;;;;;;-1:-1:-1;;383:8:0;;;;;;344:55::o"
+                    },
+                    "gasEstimates": {
+                        "creation": {
+                            "codeDepositCost": "139600",
+                            "executionCost": "infinite",
+                            "totalCost": "infinite"
+                        },
+                        "external": {
+                            "changeVal()": "20435",
+                            "decrement()": "20406",
+                            "increment()": "20488",
+                            "myBool()": "495",
+                            "myStr()": "infinite",
+                            "myuInt()": "399"
+                        }
+                    },
+                    "methodIdentifiers": {
+                        "changeVal()": "57c78f36",
+                        "decrement()": "2baeceb7",
+                        "increment()": "d09de08a",
+                        "myBool()": "6deecdbe",
+                        "myStr()": "5a455c1c",
+                        "myuInt()": "0a7deebe"
+                    }
+                },
+                "metadata": "{\"compiler\":{\"version\":\"0.5.0+commit.1d4f565a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"myuInt\",\"outputs\":[{\"name\":\"\",\"type\":\"uint8\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"decrement\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"changeVal\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"myStr\",\"outputs\":[{\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"myBool\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"increment\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"d:/MyBooks/BlockChain/Tutorial/01_Variables.sol\":\"variables\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"d:/MyBooks/BlockChain/Tutorial/01_Variables.sol\":{\"keccak256\":\"0x63371d3746944b8400892978dfb55744ea0e46877debc4afa7f96a1ee4e623d7\",\"urls\":[\"bzzr://a06dc2b78170d7531e0475d58a81270db62cec4c9005356f28cdd1be835ff31c\"]}},\"version\":1}",
+                "userdoc": {
+                    "methods": {}
+                }
+            }
+        }
+    },
+    "sources": {
+        "d:/MyBooks/BlockChain/Tutorial/01_Variables.sol": {
+            "ast": {
+                "absolutePath": "d:/MyBooks/BlockChain/Tutorial/01_Variables.sol",
+                "exportedSymbols": {
+                    "variables": [
+                        34
+                    ]
+                },
+                "id": 35,
+                "nodeType": "SourceUnit",
+                "nodes": [
+                    {
+                        "id": 1,
+                        "literals": [
+                            "solidity",
+                            "^",
+                            "0.5",
+                            ".0"
+                        ],
+                        "nodeType": "PragmaDirective",
+                        "src": "33:23:0"
+                    },
+                    {
+                        "baseContracts": [],
+                        "contractDependencies": [],
+                        "contractKind": "contract",
+                        "documentation": null,
+                        "fullyImplemented": true,
+                        "id": 34,
+                        "linearizedBaseContracts": [
+                            34
+                        ],
+                        "name": "variables",
+                        "nodeType": "ContractDefinition",
+                        "nodes": [
+                            {
+                                "constant": false,
+                                "id": 4,
+                                "name": "myuInt",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 34,
+                                "src": "121:23:0",
+                                "stateVariable": true,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_uint8",
+                                    "typeString": "uint8"
+                                },
+                                "typeName": {
+                                    "id": 2,
+                                    "name": "uint8",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "121:5:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_uint8",
+                                        "typeString": "uint8"
+                                    }
+                                },
+                                "value": {
+                                    "argumentTypes": null,
+                                    "hexValue": "30",
+                                    "id": 3,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": true,
+                                    "kind": "number",
+                                    "lValueRequested": false,
+                                    "nodeType": "Literal",
+                                    "src": "143:1:0",
+                                    "subdenomination": null,
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_rational_0_by_1",
+                                        "typeString": "int_const 0"
+                                    },
+                                    "value": "0"
+                                },
+                                "visibility": "public"
+                            },
+                            {
+                                "body": {
+                                    "id": 10,
+                                    "nodeType": "Block",
+                                    "src": "372:27:0",
+                                    "statements": [
+                                        {
+                                            "expression": {
+                                                "argumentTypes": null,
+                                                "id": 8,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "nodeType": "UnaryOperation",
+                                                "operator": "++",
+                                                "prefix": false,
+                                                "src": "383:8:0",
+                                                "subExpression": {
+                                                    "argumentTypes": null,
+                                                    "id": 7,
+                                                    "name": "myuInt",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 4,
+                                                    "src": "383:6:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_uint8",
+                                                        "typeString": "uint8"
+                                                    }
+                                                },
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint8",
+                                                    "typeString": "uint8"
+                                                }
+                                            },
+                                            "id": 9,
+                                            "nodeType": "ExpressionStatement",
+                                            "src": "383:8:0"
+                                        }
+                                    ]
+                                },
+                                "documentation": null,
+                                "id": 11,
+                                "implemented": true,
+                                "kind": "function",
+                                "modifiers": [],
+                                "name": "increment",
+                                "nodeType": "FunctionDefinition",
+                                "parameters": {
+                                    "id": 5,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [],
+                                    "src": "362:2:0"
+                                },
+                                "returnParameters": {
+                                    "id": 6,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [],
+                                    "src": "372:0:0"
+                                },
+                                "scope": 34,
+                                "src": "344:55:0",
+                                "stateMutability": "nonpayable",
+                                "superFunction": null,
+                                "visibility": "public"
+                            },
+                            {
+                                "body": {
+                                    "id": 17,
+                                    "nodeType": "Block",
+                                    "src": "480:27:0",
+                                    "statements": [
+                                        {
+                                            "expression": {
+                                                "argumentTypes": null,
+                                                "id": 15,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "nodeType": "UnaryOperation",
+                                                "operator": "--",
+                                                "prefix": false,
+                                                "src": "491:8:0",
+                                                "subExpression": {
+                                                    "argumentTypes": null,
+                                                    "id": 14,
+                                                    "name": "myuInt",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 4,
+                                                    "src": "491:6:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_uint8",
+                                                        "typeString": "uint8"
+                                                    }
+                                                },
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint8",
+                                                    "typeString": "uint8"
+                                                }
+                                            },
+                                            "id": 16,
+                                            "nodeType": "ExpressionStatement",
+                                            "src": "491:8:0"
+                                        }
+                                    ]
+                                },
+                                "documentation": null,
+                                "id": 18,
+                                "implemented": true,
+                                "kind": "function",
+                                "modifiers": [],
+                                "name": "decrement",
+                                "nodeType": "FunctionDefinition",
+                                "parameters": {
+                                    "id": 12,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [],
+                                    "src": "470:2:0"
+                                },
+                                "returnParameters": {
+                                    "id": 13,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [],
+                                    "src": "480:0:0"
+                                },
+                                "scope": 34,
+                                "src": "452:55:0",
+                                "stateMutability": "nonpayable",
+                                "superFunction": null,
+                                "visibility": "public"
+                            },
+                            {
+                                "constant": false,
+                                "id": 21,
+                                "name": "myBool",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 34,
+                                "src": "560:26:0",
+                                "stateVariable": true,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_bool",
+                                    "typeString": "bool"
+                                },
+                                "typeName": {
+                                    "id": 19,
+                                    "name": "bool",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "560:4:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_bool",
+                                        "typeString": "bool"
+                                    }
+                                },
+                                "value": {
+                                    "argumentTypes": null,
+                                    "hexValue": "66616c7365",
+                                    "id": 20,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": true,
+                                    "kind": "bool",
+                                    "lValueRequested": false,
+                                    "nodeType": "Literal",
+                                    "src": "581:5:0",
+                                    "subdenomination": null,
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_bool",
+                                        "typeString": "bool"
+                                    },
+                                    "value": "false"
+                                },
+                                "visibility": "public"
+                            },
+                            {
+                                "body": {
+                                    "id": 29,
+                                    "nodeType": "Block",
+                                    "src": "673:35:0",
+                                    "statements": [
+                                        {
+                                            "expression": {
+                                                "argumentTypes": null,
+                                                "id": 27,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "leftHandSide": {
+                                                    "argumentTypes": null,
+                                                    "id": 24,
+                                                    "name": "myBool",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 21,
+                                                    "src": "684:6:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_bool",
+                                                        "typeString": "bool"
+                                                    }
+                                                },
+                                                "nodeType": "Assignment",
+                                                "operator": "=",
+                                                "rightHandSide": {
+                                                    "argumentTypes": null,
+                                                    "id": 26,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": false,
+                                                    "lValueRequested": false,
+                                                    "nodeType": "UnaryOperation",
+                                                    "operator": "!",
+                                                    "prefix": true,
+                                                    "src": "693:7:0",
+                                                    "subExpression": {
+                                                        "argumentTypes": null,
+                                                        "id": 25,
+                                                        "name": "myBool",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 21,
+                                                        "src": "694:6:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_bool",
+                                                            "typeString": "bool"
+                                                        }
+                                                    },
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_bool",
+                                                        "typeString": "bool"
+                                                    }
+                                                },
+                                                "src": "684:16:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_bool",
+                                                    "typeString": "bool"
+                                                }
+                                            },
+                                            "id": 28,
+                                            "nodeType": "ExpressionStatement",
+                                            "src": "684:16:0"
+                                        }
+                                    ]
+                                },
+                                "documentation": null,
+                                "id": 30,
+                                "implemented": true,
+                                "kind": "function",
+                                "modifiers": [],
+                                "name": "changeVal",
+                                "nodeType": "FunctionDefinition",
+                                "parameters": {
+                                    "id": 22,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [],
+                                    "src": "663:2:0"
+                                },
+                                "returnParameters": {
+                                    "id": 23,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [],
+                                    "src": "673:0:0"
+                                },
+                                "scope": 34,
+                                "src": "645:63:0",
+                                "stateMutability": "nonpayable",
+                                "superFunction": null,
+                                "visibility": "public"
+                            },
+                            {
+                                "constant": false,
+                                "id": 33,
+                                "name": "myStr",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 34,
+                                "src": "828:29:0",
+                                "stateVariable": true,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_string_storage",
+                                    "typeString": "string"
+                                },
+                                "typeName": {
+                                    "id": 31,
+                                    "name": "string",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "828:6:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_storage_ptr",
+                                        "typeString": "string"
+                                    }
+                                },
+                                "value": {
+                                    "argumentTypes": null,
+                                    "hexValue": "736168696c",
+                                    "id": 32,
+                                    "isConstant": false,
+                                    "isLValue": false,
+                                    "isPure": true,
+                                    "kind": "string",
+                                    "lValueRequested": false,
+                                    "nodeType": "Literal",
+                                    "src": "850:7:0",
+                                    "subdenomination": null,
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_stringliteral_f67e3b232bd5b8a07700b1f5e3cb5fa75d17c1207f88c5110c6a759956ef7f05",
+                                        "typeString": "literal_string \"sahil\""
+                                    },
+                                    "value": "sahil"
+                                },
+                                "visibility": "public"
+                            }
+                        ],
+                        "scope": 35,
+                        "src": "95:766:0"
+                    }
+                ],
+                "src": "33:830:0"
+            },
+            "id": 0
+        }
+    }
+}

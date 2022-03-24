@@ -1,0 +1,704 @@
+{
+    "contracts": {
+        "d:/MyBooks/BlockChain/Tutorial/02_Address_and_mapping.sol": {
+            "variables": {
+                "abi": [
+                    {
+                        "constant": true,
+                        "inputs": [],
+                        "name": "myAdd",
+                        "outputs": [
+                            {
+                                "name": "",
+                                "type": "address"
+                            }
+                        ],
+                        "payable": false,
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "constant": true,
+                        "inputs": [],
+                        "name": "getBalance",
+                        "outputs": [
+                            {
+                                "name": "",
+                                "type": "uint256"
+                            }
+                        ],
+                        "payable": false,
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "constant": false,
+                        "inputs": [],
+                        "name": "initMap",
+                        "outputs": [],
+                        "payable": false,
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "constant": false,
+                        "inputs": [
+                            {
+                                "name": "key",
+                                "type": "uint8"
+                            },
+                            {
+                                "name": "value",
+                                "type": "string"
+                            }
+                        ],
+                        "name": "initMapUser",
+                        "outputs": [],
+                        "payable": false,
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "constant": true,
+                        "inputs": [
+                            {
+                                "name": "",
+                                "type": "uint8"
+                            }
+                        ],
+                        "name": "myMap",
+                        "outputs": [
+                            {
+                                "name": "",
+                                "type": "string"
+                            }
+                        ],
+                        "payable": false,
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [],
+                        "payable": false,
+                        "stateMutability": "nonpayable",
+                        "type": "constructor"
+                    }
+                ],
+                "devdoc": {
+                    "methods": {}
+                },
+                "evm": {
+                    "bytecode": {
+                        "linkReferences": {},
+                        "object": "608060405234801561001057600080fd5b5060008054600160a060020a031916735b38da6a701c568545dcfcb03fcb875f56beddc417905561047b806100466000396000f3fe60806040526004361061006c5763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166303c59247811461007157806312065fe0146100af578063151810a6146100d6578063e207d193146100ed578063eb815e4d146101aa575b600080fd5b34801561007d57600080fd5b5061008661024c565b6040805173ffffffffffffffffffffffffffffffffffffffff9092168252519081900360200190f35b3480156100bb57600080fd5b506100c4610268565b60408051918252519081900360200190f35b3480156100e257600080fd5b506100eb610286565b005b3480156100f957600080fd5b506100eb6004803603604081101561011057600080fd5b60ff823516919081019060408101602082013564010000000081111561013557600080fd5b82018360208201111561014757600080fd5b8035906020019184600183028401116401000000008311171561016957600080fd5b91908080601f0160208091040260200160405190810160405280939291908181526020018383808284376000920191909152509295506102f5945050505050565b3480156101b657600080fd5b506101d7600480360360208110156101cd57600080fd5b503560ff1661031d565b6040805160208082528351818301528351919283929083019185019080838360005b838110156102115781810151838201526020016101f9565b50505050905090810190601f16801561023e5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60005473ffffffffffffffffffffffffffffffffffffffff1681565b60005473ffffffffffffffffffffffffffffffffffffffff16315b90565b60408051808201909152600581527f536168696c0000000000000000000000000000000000000000000000000000006020808301918252600080526001905290516102f2917fa6eef7e35abe7026729641147f7915573c7e97b47efa546f5f6e3230263bcb49916103b7565b50565b60ff821660009081526001602090815260409091208251610318928401906103b7565b505050565b60016020818152600092835260409283902080548451600294821615610100026000190190911693909304601f81018390048302840183019094528383529192908301828280156103af5780601f10610384576101008083540402835291602001916103af565b820191906000526020600020905b81548152906001019060200180831161039257829003601f168201915b505050505081565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106103f857805160ff1916838001178555610425565b82800160010185558215610425579182015b8281111561042557825182559160200191906001019061040a565b50610431929150610435565b5090565b61028391905b80821115610431576000815560010161043b56fea165627a7a72305820e9e41b52406c855b4f806f700961101f69c9015de27e18e0ebed9843c79a70210029",
+                        "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH2 0x10 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x0 DUP1 SLOAD PUSH1 0x1 PUSH1 0xA0 PUSH1 0x2 EXP SUB NOT AND PUSH20 0x5B38DA6A701C568545DCFCB03FCB875F56BEDDC4 OR SWAP1 SSTORE PUSH2 0x47B DUP1 PUSH2 0x46 PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x4 CALLDATASIZE LT PUSH2 0x6C JUMPI PUSH4 0xFFFFFFFF PUSH29 0x100000000000000000000000000000000000000000000000000000000 PUSH1 0x0 CALLDATALOAD DIV AND PUSH4 0x3C59247 DUP2 EQ PUSH2 0x71 JUMPI DUP1 PUSH4 0x12065FE0 EQ PUSH2 0xAF JUMPI DUP1 PUSH4 0x151810A6 EQ PUSH2 0xD6 JUMPI DUP1 PUSH4 0xE207D193 EQ PUSH2 0xED JUMPI DUP1 PUSH4 0xEB815E4D EQ PUSH2 0x1AA JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST CALLVALUE DUP1 ISZERO PUSH2 0x7D JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH2 0x86 PUSH2 0x24C JUMP JUMPDEST PUSH1 0x40 DUP1 MLOAD PUSH20 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF SWAP1 SWAP3 AND DUP3 MSTORE MLOAD SWAP1 DUP2 SWAP1 SUB PUSH1 0x20 ADD SWAP1 RETURN JUMPDEST CALLVALUE DUP1 ISZERO PUSH2 0xBB JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH2 0xC4 PUSH2 0x268 JUMP JUMPDEST PUSH1 0x40 DUP1 MLOAD SWAP2 DUP3 MSTORE MLOAD SWAP1 DUP2 SWAP1 SUB PUSH1 0x20 ADD SWAP1 RETURN JUMPDEST CALLVALUE DUP1 ISZERO PUSH2 0xE2 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH2 0xEB PUSH2 0x286 JUMP JUMPDEST STOP JUMPDEST CALLVALUE DUP1 ISZERO PUSH2 0xF9 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH2 0xEB PUSH1 0x4 DUP1 CALLDATASIZE SUB PUSH1 0x40 DUP2 LT ISZERO PUSH2 0x110 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0xFF DUP3 CALLDATALOAD AND SWAP2 SWAP1 DUP2 ADD SWAP1 PUSH1 0x40 DUP2 ADD PUSH1 0x20 DUP3 ADD CALLDATALOAD PUSH5 0x100000000 DUP2 GT ISZERO PUSH2 0x135 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST DUP3 ADD DUP4 PUSH1 0x20 DUP3 ADD GT ISZERO PUSH2 0x147 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST DUP1 CALLDATALOAD SWAP1 PUSH1 0x20 ADD SWAP2 DUP5 PUSH1 0x1 DUP4 MUL DUP5 ADD GT PUSH5 0x100000000 DUP4 GT OR ISZERO PUSH2 0x169 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST SWAP2 SWAP1 DUP1 DUP1 PUSH1 0x1F ADD PUSH1 0x20 DUP1 SWAP2 DIV MUL PUSH1 0x20 ADD PUSH1 0x40 MLOAD SWAP1 DUP2 ADD PUSH1 0x40 MSTORE DUP1 SWAP4 SWAP3 SWAP2 SWAP1 DUP2 DUP2 MSTORE PUSH1 0x20 ADD DUP4 DUP4 DUP1 DUP3 DUP5 CALLDATACOPY PUSH1 0x0 SWAP3 ADD SWAP2 SWAP1 SWAP2 MSTORE POP SWAP3 SWAP6 POP PUSH2 0x2F5 SWAP5 POP POP POP POP POP JUMP JUMPDEST CALLVALUE DUP1 ISZERO PUSH2 0x1B6 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH2 0x1D7 PUSH1 0x4 DUP1 CALLDATASIZE SUB PUSH1 0x20 DUP2 LT ISZERO PUSH2 0x1CD JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP CALLDATALOAD PUSH1 0xFF AND PUSH2 0x31D JUMP JUMPDEST PUSH1 0x40 DUP1 MLOAD PUSH1 0x20 DUP1 DUP3 MSTORE DUP4 MLOAD DUP2 DUP4 ADD MSTORE DUP4 MLOAD SWAP2 SWAP3 DUP4 SWAP3 SWAP1 DUP4 ADD SWAP2 DUP6 ADD SWAP1 DUP1 DUP4 DUP4 PUSH1 0x0 JUMPDEST DUP4 DUP2 LT ISZERO PUSH2 0x211 JUMPI DUP2 DUP2 ADD MLOAD DUP4 DUP3 ADD MSTORE PUSH1 0x20 ADD PUSH2 0x1F9 JUMP JUMPDEST POP POP POP POP SWAP1 POP SWAP1 DUP2 ADD SWAP1 PUSH1 0x1F AND DUP1 ISZERO PUSH2 0x23E JUMPI DUP1 DUP3 SUB DUP1 MLOAD PUSH1 0x1 DUP4 PUSH1 0x20 SUB PUSH2 0x100 EXP SUB NOT AND DUP2 MSTORE PUSH1 0x20 ADD SWAP2 POP JUMPDEST POP SWAP3 POP POP POP PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 RETURN JUMPDEST PUSH1 0x0 SLOAD PUSH20 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF AND DUP2 JUMP JUMPDEST PUSH1 0x0 SLOAD PUSH20 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF AND BALANCE JUMPDEST SWAP1 JUMP JUMPDEST PUSH1 0x40 DUP1 MLOAD DUP1 DUP3 ADD SWAP1 SWAP2 MSTORE PUSH1 0x5 DUP2 MSTORE PUSH32 0x536168696C000000000000000000000000000000000000000000000000000000 PUSH1 0x20 DUP1 DUP4 ADD SWAP2 DUP3 MSTORE PUSH1 0x0 DUP1 MSTORE PUSH1 0x1 SWAP1 MSTORE SWAP1 MLOAD PUSH2 0x2F2 SWAP2 PUSH32 0xA6EEF7E35ABE7026729641147F7915573C7E97B47EFA546F5F6E3230263BCB49 SWAP2 PUSH2 0x3B7 JUMP JUMPDEST POP JUMP JUMPDEST PUSH1 0xFF DUP3 AND PUSH1 0x0 SWAP1 DUP2 MSTORE PUSH1 0x1 PUSH1 0x20 SWAP1 DUP2 MSTORE PUSH1 0x40 SWAP1 SWAP2 KECCAK256 DUP3 MLOAD PUSH2 0x318 SWAP3 DUP5 ADD SWAP1 PUSH2 0x3B7 JUMP JUMPDEST POP POP POP JUMP JUMPDEST PUSH1 0x1 PUSH1 0x20 DUP2 DUP2 MSTORE PUSH1 0x0 SWAP3 DUP4 MSTORE PUSH1 0x40 SWAP3 DUP4 SWAP1 KECCAK256 DUP1 SLOAD DUP5 MLOAD PUSH1 0x2 SWAP5 DUP3 AND ISZERO PUSH2 0x100 MUL PUSH1 0x0 NOT ADD SWAP1 SWAP2 AND SWAP4 SWAP1 SWAP4 DIV PUSH1 0x1F DUP2 ADD DUP4 SWAP1 DIV DUP4 MUL DUP5 ADD DUP4 ADD SWAP1 SWAP5 MSTORE DUP4 DUP4 MSTORE SWAP2 SWAP3 SWAP1 DUP4 ADD DUP3 DUP3 DUP1 ISZERO PUSH2 0x3AF JUMPI DUP1 PUSH1 0x1F LT PUSH2 0x384 JUMPI PUSH2 0x100 DUP1 DUP4 SLOAD DIV MUL DUP4 MSTORE SWAP2 PUSH1 0x20 ADD SWAP2 PUSH2 0x3AF JUMP JUMPDEST DUP3 ADD SWAP2 SWAP1 PUSH1 0x0 MSTORE PUSH1 0x20 PUSH1 0x0 KECCAK256 SWAP1 JUMPDEST DUP2 SLOAD DUP2 MSTORE SWAP1 PUSH1 0x1 ADD SWAP1 PUSH1 0x20 ADD DUP1 DUP4 GT PUSH2 0x392 JUMPI DUP3 SWAP1 SUB PUSH1 0x1F AND DUP3 ADD SWAP2 JUMPDEST POP POP POP POP POP DUP2 JUMP JUMPDEST DUP3 DUP1 SLOAD PUSH1 0x1 DUP2 PUSH1 0x1 AND ISZERO PUSH2 0x100 MUL SUB AND PUSH1 0x2 SWAP1 DIV SWAP1 PUSH1 0x0 MSTORE PUSH1 0x20 PUSH1 0x0 KECCAK256 SWAP1 PUSH1 0x1F ADD PUSH1 0x20 SWAP1 DIV DUP2 ADD SWAP3 DUP3 PUSH1 0x1F LT PUSH2 0x3F8 JUMPI DUP1 MLOAD PUSH1 0xFF NOT AND DUP4 DUP1 ADD OR DUP6 SSTORE PUSH2 0x425 JUMP JUMPDEST DUP3 DUP1 ADD PUSH1 0x1 ADD DUP6 SSTORE DUP3 ISZERO PUSH2 0x425 JUMPI SWAP2 DUP3 ADD JUMPDEST DUP3 DUP2 GT ISZERO PUSH2 0x425 JUMPI DUP3 MLOAD DUP3 SSTORE SWAP2 PUSH1 0x20 ADD SWAP2 SWAP1 PUSH1 0x1 ADD SWAP1 PUSH2 0x40A JUMP JUMPDEST POP PUSH2 0x431 SWAP3 SWAP2 POP PUSH2 0x435 JUMP JUMPDEST POP SWAP1 JUMP JUMPDEST PUSH2 0x283 SWAP2 SWAP1 JUMPDEST DUP1 DUP3 GT ISZERO PUSH2 0x431 JUMPI PUSH1 0x0 DUP2 SSTORE PUSH1 0x1 ADD PUSH2 0x43B JUMP INVALID LOG1 PUSH6 0x627A7A723058 KECCAK256 0xe9 0xe4 SHL MSTORE BLOCKHASH PUSH13 0x855B4F806F700961101F69C901 0x5d 0xe2 PUSH31 0x18E0EBED9843C79A7021002900000000000000000000000000000000000000 ",
+                        "sourceMap": "95:582:0:-;;;213:90;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;245:5:0;:50;;-1:-1:-1;;;;;;245:50:0;253:42;245:50;;;95:582;;;;;;"
+                    },
+                    "deployedBytecode": {
+                        "linkReferences": {},
+                        "object": "60806040526004361061006c5763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166303c59247811461007157806312065fe0146100af578063151810a6146100d6578063e207d193146100ed578063eb815e4d146101aa575b600080fd5b34801561007d57600080fd5b5061008661024c565b6040805173ffffffffffffffffffffffffffffffffffffffff9092168252519081900360200190f35b3480156100bb57600080fd5b506100c4610268565b60408051918252519081900360200190f35b3480156100e257600080fd5b506100eb610286565b005b3480156100f957600080fd5b506100eb6004803603604081101561011057600080fd5b60ff823516919081019060408101602082013564010000000081111561013557600080fd5b82018360208201111561014757600080fd5b8035906020019184600183028401116401000000008311171561016957600080fd5b91908080601f0160208091040260200160405190810160405280939291908181526020018383808284376000920191909152509295506102f5945050505050565b3480156101b657600080fd5b506101d7600480360360208110156101cd57600080fd5b503560ff1661031d565b6040805160208082528351818301528351919283929083019185019080838360005b838110156102115781810151838201526020016101f9565b50505050905090810190601f16801561023e5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60005473ffffffffffffffffffffffffffffffffffffffff1681565b60005473ffffffffffffffffffffffffffffffffffffffff16315b90565b60408051808201909152600581527f536168696c0000000000000000000000000000000000000000000000000000006020808301918252600080526001905290516102f2917fa6eef7e35abe7026729641147f7915573c7e97b47efa546f5f6e3230263bcb49916103b7565b50565b60ff821660009081526001602090815260409091208251610318928401906103b7565b505050565b60016020818152600092835260409283902080548451600294821615610100026000190190911693909304601f81018390048302840183019094528383529192908301828280156103af5780601f10610384576101008083540402835291602001916103af565b820191906000526020600020905b81548152906001019060200180831161039257829003601f168201915b505050505081565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106103f857805160ff1916838001178555610425565b82800160010185558215610425579182015b8281111561042557825182559160200191906001019061040a565b50610431929150610435565b5090565b61028391905b80821115610431576000815560010161043b56fea165627a7a72305820e9e41b52406c855b4f806f700961101f69c9015de27e18e0ebed9843c79a70210029",
+                        "opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x4 CALLDATASIZE LT PUSH2 0x6C JUMPI PUSH4 0xFFFFFFFF PUSH29 0x100000000000000000000000000000000000000000000000000000000 PUSH1 0x0 CALLDATALOAD DIV AND PUSH4 0x3C59247 DUP2 EQ PUSH2 0x71 JUMPI DUP1 PUSH4 0x12065FE0 EQ PUSH2 0xAF JUMPI DUP1 PUSH4 0x151810A6 EQ PUSH2 0xD6 JUMPI DUP1 PUSH4 0xE207D193 EQ PUSH2 0xED JUMPI DUP1 PUSH4 0xEB815E4D EQ PUSH2 0x1AA JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST CALLVALUE DUP1 ISZERO PUSH2 0x7D JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH2 0x86 PUSH2 0x24C JUMP JUMPDEST PUSH1 0x40 DUP1 MLOAD PUSH20 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF SWAP1 SWAP3 AND DUP3 MSTORE MLOAD SWAP1 DUP2 SWAP1 SUB PUSH1 0x20 ADD SWAP1 RETURN JUMPDEST CALLVALUE DUP1 ISZERO PUSH2 0xBB JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH2 0xC4 PUSH2 0x268 JUMP JUMPDEST PUSH1 0x40 DUP1 MLOAD SWAP2 DUP3 MSTORE MLOAD SWAP1 DUP2 SWAP1 SUB PUSH1 0x20 ADD SWAP1 RETURN JUMPDEST CALLVALUE DUP1 ISZERO PUSH2 0xE2 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH2 0xEB PUSH2 0x286 JUMP JUMPDEST STOP JUMPDEST CALLVALUE DUP1 ISZERO PUSH2 0xF9 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH2 0xEB PUSH1 0x4 DUP1 CALLDATASIZE SUB PUSH1 0x40 DUP2 LT ISZERO PUSH2 0x110 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST PUSH1 0xFF DUP3 CALLDATALOAD AND SWAP2 SWAP1 DUP2 ADD SWAP1 PUSH1 0x40 DUP2 ADD PUSH1 0x20 DUP3 ADD CALLDATALOAD PUSH5 0x100000000 DUP2 GT ISZERO PUSH2 0x135 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST DUP3 ADD DUP4 PUSH1 0x20 DUP3 ADD GT ISZERO PUSH2 0x147 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST DUP1 CALLDATALOAD SWAP1 PUSH1 0x20 ADD SWAP2 DUP5 PUSH1 0x1 DUP4 MUL DUP5 ADD GT PUSH5 0x100000000 DUP4 GT OR ISZERO PUSH2 0x169 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST SWAP2 SWAP1 DUP1 DUP1 PUSH1 0x1F ADD PUSH1 0x20 DUP1 SWAP2 DIV MUL PUSH1 0x20 ADD PUSH1 0x40 MLOAD SWAP1 DUP2 ADD PUSH1 0x40 MSTORE DUP1 SWAP4 SWAP3 SWAP2 SWAP1 DUP2 DUP2 MSTORE PUSH1 0x20 ADD DUP4 DUP4 DUP1 DUP3 DUP5 CALLDATACOPY PUSH1 0x0 SWAP3 ADD SWAP2 SWAP1 SWAP2 MSTORE POP SWAP3 SWAP6 POP PUSH2 0x2F5 SWAP5 POP POP POP POP POP JUMP JUMPDEST CALLVALUE DUP1 ISZERO PUSH2 0x1B6 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH2 0x1D7 PUSH1 0x4 DUP1 CALLDATASIZE SUB PUSH1 0x20 DUP2 LT ISZERO PUSH2 0x1CD JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP CALLDATALOAD PUSH1 0xFF AND PUSH2 0x31D JUMP JUMPDEST PUSH1 0x40 DUP1 MLOAD PUSH1 0x20 DUP1 DUP3 MSTORE DUP4 MLOAD DUP2 DUP4 ADD MSTORE DUP4 MLOAD SWAP2 SWAP3 DUP4 SWAP3 SWAP1 DUP4 ADD SWAP2 DUP6 ADD SWAP1 DUP1 DUP4 DUP4 PUSH1 0x0 JUMPDEST DUP4 DUP2 LT ISZERO PUSH2 0x211 JUMPI DUP2 DUP2 ADD MLOAD DUP4 DUP3 ADD MSTORE PUSH1 0x20 ADD PUSH2 0x1F9 JUMP JUMPDEST POP POP POP POP SWAP1 POP SWAP1 DUP2 ADD SWAP1 PUSH1 0x1F AND DUP1 ISZERO PUSH2 0x23E JUMPI DUP1 DUP3 SUB DUP1 MLOAD PUSH1 0x1 DUP4 PUSH1 0x20 SUB PUSH2 0x100 EXP SUB NOT AND DUP2 MSTORE PUSH1 0x20 ADD SWAP2 POP JUMPDEST POP SWAP3 POP POP POP PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 RETURN JUMPDEST PUSH1 0x0 SLOAD PUSH20 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF AND DUP2 JUMP JUMPDEST PUSH1 0x0 SLOAD PUSH20 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF AND BALANCE JUMPDEST SWAP1 JUMP JUMPDEST PUSH1 0x40 DUP1 MLOAD DUP1 DUP3 ADD SWAP1 SWAP2 MSTORE PUSH1 0x5 DUP2 MSTORE PUSH32 0x536168696C000000000000000000000000000000000000000000000000000000 PUSH1 0x20 DUP1 DUP4 ADD SWAP2 DUP3 MSTORE PUSH1 0x0 DUP1 MSTORE PUSH1 0x1 SWAP1 MSTORE SWAP1 MLOAD PUSH2 0x2F2 SWAP2 PUSH32 0xA6EEF7E35ABE7026729641147F7915573C7E97B47EFA546F5F6E3230263BCB49 SWAP2 PUSH2 0x3B7 JUMP JUMPDEST POP JUMP JUMPDEST PUSH1 0xFF DUP3 AND PUSH1 0x0 SWAP1 DUP2 MSTORE PUSH1 0x1 PUSH1 0x20 SWAP1 DUP2 MSTORE PUSH1 0x40 SWAP1 SWAP2 KECCAK256 DUP3 MLOAD PUSH2 0x318 SWAP3 DUP5 ADD SWAP1 PUSH2 0x3B7 JUMP JUMPDEST POP POP POP JUMP JUMPDEST PUSH1 0x1 PUSH1 0x20 DUP2 DUP2 MSTORE PUSH1 0x0 SWAP3 DUP4 MSTORE PUSH1 0x40 SWAP3 DUP4 SWAP1 KECCAK256 DUP1 SLOAD DUP5 MLOAD PUSH1 0x2 SWAP5 DUP3 AND ISZERO PUSH2 0x100 MUL PUSH1 0x0 NOT ADD SWAP1 SWAP2 AND SWAP4 SWAP1 SWAP4 DIV PUSH1 0x1F DUP2 ADD DUP4 SWAP1 DIV DUP4 MUL DUP5 ADD DUP4 ADD SWAP1 SWAP5 MSTORE DUP4 DUP4 MSTORE SWAP2 SWAP3 SWAP1 DUP4 ADD DUP3 DUP3 DUP1 ISZERO PUSH2 0x3AF JUMPI DUP1 PUSH1 0x1F LT PUSH2 0x384 JUMPI PUSH2 0x100 DUP1 DUP4 SLOAD DIV MUL DUP4 MSTORE SWAP2 PUSH1 0x20 ADD SWAP2 PUSH2 0x3AF JUMP JUMPDEST DUP3 ADD SWAP2 SWAP1 PUSH1 0x0 MSTORE PUSH1 0x20 PUSH1 0x0 KECCAK256 SWAP1 JUMPDEST DUP2 SLOAD DUP2 MSTORE SWAP1 PUSH1 0x1 ADD SWAP1 PUSH1 0x20 ADD DUP1 DUP4 GT PUSH2 0x392 JUMPI DUP3 SWAP1 SUB PUSH1 0x1F AND DUP3 ADD SWAP2 JUMPDEST POP POP POP POP POP DUP2 JUMP JUMPDEST DUP3 DUP1 SLOAD PUSH1 0x1 DUP2 PUSH1 0x1 AND ISZERO PUSH2 0x100 MUL SUB AND PUSH1 0x2 SWAP1 DIV SWAP1 PUSH1 0x0 MSTORE PUSH1 0x20 PUSH1 0x0 KECCAK256 SWAP1 PUSH1 0x1F ADD PUSH1 0x20 SWAP1 DIV DUP2 ADD SWAP3 DUP3 PUSH1 0x1F LT PUSH2 0x3F8 JUMPI DUP1 MLOAD PUSH1 0xFF NOT AND DUP4 DUP1 ADD OR DUP6 SSTORE PUSH2 0x425 JUMP JUMPDEST DUP3 DUP1 ADD PUSH1 0x1 ADD DUP6 SSTORE DUP3 ISZERO PUSH2 0x425 JUMPI SWAP2 DUP3 ADD JUMPDEST DUP3 DUP2 GT ISZERO PUSH2 0x425 JUMPI DUP3 MLOAD DUP3 SSTORE SWAP2 PUSH1 0x20 ADD SWAP2 SWAP1 PUSH1 0x1 ADD SWAP1 PUSH2 0x40A JUMP JUMPDEST POP PUSH2 0x431 SWAP3 SWAP2 POP PUSH2 0x435 JUMP JUMPDEST POP SWAP1 JUMP JUMPDEST PUSH2 0x283 SWAP2 SWAP1 JUMPDEST DUP1 DUP3 GT ISZERO PUSH2 0x431 JUMPI PUSH1 0x0 DUP2 SSTORE PUSH1 0x1 ADD PUSH2 0x43B JUMP INVALID LOG1 PUSH6 0x627A7A723058 KECCAK256 0xe9 0xe4 SHL MSTORE BLOCKHASH PUSH13 0x855B4F806F700961101F69C901 0x5d 0xe2 PUSH31 0x18E0EBED9843C79A7021002900000000000000000000000000000000000000 ",
+                        "sourceMap": "95:582:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;184:20;;8:9:-1;5:2;;;30:1;27;20:12;5:2;184:20:0;;;;;;;;;;;;;;;;;;;;;;;311:91;;8:9:-1;5:2;;;30:1;27;20:12;5:2;311:91:0;;;;;;;;;;;;;;;;;;;;506:63;;8:9:-1;5:2;;;30:1;27;20:12;5:2;506:63:0;;;;;;577:97;;8:9:-1;5:2;;;30:1;27;20:12;5:2;577:97:0;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;577:97:0;;;;;;;;;;;;;;;;21:11:-1;5:28;;2:2;;;46:1;43;36:12;2:2;577:97:0;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;577:97:0;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;577:97:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;81:16;;74:27;;;;-1:-1;577:97:0;;-1:-1:-1;577:97:0;;-1:-1:-1;;;;;577:97:0;460:37;;8:9:-1;5:2;;;30:1;27;20:12;5:2;460:37:0;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;-1:-1;460:37:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:100:-1;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;460:37:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;184:20;;;;;;:::o;311:91::-;354:7;381:5;;;:13;311:91;;:::o;506:63::-;543:18;;;;;;;;;;;;;;;;;;;;-1:-1:-1;543:8:0;;:5;:8;;:18;;;;:8;;:18;:::i;:::-;;506:63::o;577:97::-;648:10;;;;;;;:5;:10;;;;;;;;:18;;;;;;;;:::i;:::-;;577:97;;:::o;460:37::-;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;460:37:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;95:582::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;95:582:0;;;-1:-1:-1;95:582:0;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;"
+                    },
+                    "gasEstimates": {
+                        "creation": {
+                            "codeDepositCost": "229400",
+                            "executionCost": "20562",
+                            "totalCost": "249962"
+                        },
+                        "external": {
+                            "getBalance()": "813",
+                            "initMap()": "infinite",
+                            "initMapUser(uint8,string)": "infinite",
+                            "myAdd()": "399",
+                            "myMap(uint8)": "infinite"
+                        }
+                    },
+                    "methodIdentifiers": {
+                        "getBalance()": "12065fe0",
+                        "initMap()": "151810a6",
+                        "initMapUser(uint8,string)": "e207d193",
+                        "myAdd()": "03c59247",
+                        "myMap(uint8)": "eb815e4d"
+                    }
+                },
+                "metadata": "{\"compiler\":{\"version\":\"0.5.0+commit.1d4f565a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"myAdd\",\"outputs\":[{\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"getBalance\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"initMap\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"key\",\"type\":\"uint8\"},{\"name\":\"value\",\"type\":\"string\"}],\"name\":\"initMapUser\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"uint8\"}],\"name\":\"myMap\",\"outputs\":[{\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"d:/MyBooks/BlockChain/Tutorial/02_Address_and_mapping.sol\":\"variables\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"d:/MyBooks/BlockChain/Tutorial/02_Address_and_mapping.sol\":{\"keccak256\":\"0x65f87ceb5d138d2f65b66d9ce64684fa6a0a9831460d650b447322dbd681f075\",\"urls\":[\"bzzr://a67922c904d2090dd318bf73e1e5a12e21e14f715820451ce66e6c9d24eddeb9\"]}},\"version\":1}",
+                "userdoc": {
+                    "methods": {}
+                }
+            }
+        }
+    },
+    "sources": {
+        "d:/MyBooks/BlockChain/Tutorial/02_Address_and_mapping.sol": {
+            "ast": {
+                "absolutePath": "d:/MyBooks/BlockChain/Tutorial/02_Address_and_mapping.sol",
+                "exportedSymbols": {
+                    "variables": [
+                        49
+                    ]
+                },
+                "id": 50,
+                "nodeType": "SourceUnit",
+                "nodes": [
+                    {
+                        "id": 1,
+                        "literals": [
+                            "solidity",
+                            "^",
+                            "0.5",
+                            ".0"
+                        ],
+                        "nodeType": "PragmaDirective",
+                        "src": "33:23:0"
+                    },
+                    {
+                        "baseContracts": [],
+                        "contractDependencies": [],
+                        "contractKind": "contract",
+                        "documentation": null,
+                        "fullyImplemented": true,
+                        "id": 49,
+                        "linearizedBaseContracts": [
+                            49
+                        ],
+                        "name": "variables",
+                        "nodeType": "ContractDefinition",
+                        "nodes": [
+                            {
+                                "constant": false,
+                                "id": 3,
+                                "name": "myAdd",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 49,
+                                "src": "184:20:0",
+                                "stateVariable": true,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_address",
+                                    "typeString": "address"
+                                },
+                                "typeName": {
+                                    "id": 2,
+                                    "name": "address",
+                                    "nodeType": "ElementaryTypeName",
+                                    "src": "184:7:0",
+                                    "stateMutability": "nonpayable",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_address",
+                                        "typeString": "address"
+                                    }
+                                },
+                                "value": null,
+                                "visibility": "public"
+                            },
+                            {
+                                "body": {
+                                    "id": 10,
+                                    "nodeType": "Block",
+                                    "src": "234:69:0",
+                                    "statements": [
+                                        {
+                                            "expression": {
+                                                "argumentTypes": null,
+                                                "id": 8,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "leftHandSide": {
+                                                    "argumentTypes": null,
+                                                    "id": 6,
+                                                    "name": "myAdd",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 3,
+                                                    "src": "245:5:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_address",
+                                                        "typeString": "address"
+                                                    }
+                                                },
+                                                "nodeType": "Assignment",
+                                                "operator": "=",
+                                                "rightHandSide": {
+                                                    "argumentTypes": null,
+                                                    "hexValue": "307835423338446136613730316335363835343564436663423033466342383735663536626564644334",
+                                                    "id": 7,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": true,
+                                                    "kind": "number",
+                                                    "lValueRequested": false,
+                                                    "nodeType": "Literal",
+                                                    "src": "253:42:0",
+                                                    "subdenomination": null,
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_address_payable",
+                                                        "typeString": "address payable"
+                                                    },
+                                                    "value": "0x5B38Da6a701c568545dCfcB03FcB875f56beddC4"
+                                                },
+                                                "src": "245:50:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                }
+                                            },
+                                            "id": 9,
+                                            "nodeType": "ExpressionStatement",
+                                            "src": "245:50:0"
+                                        }
+                                    ]
+                                },
+                                "documentation": null,
+                                "id": 11,
+                                "implemented": true,
+                                "kind": "constructor",
+                                "modifiers": [],
+                                "name": "",
+                                "nodeType": "FunctionDefinition",
+                                "parameters": {
+                                    "id": 4,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [],
+                                    "src": "224:2:0"
+                                },
+                                "returnParameters": {
+                                    "id": 5,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [],
+                                    "src": "234:0:0"
+                                },
+                                "scope": 49,
+                                "src": "213:90:0",
+                                "stateMutability": "nonpayable",
+                                "superFunction": null,
+                                "visibility": "public"
+                            },
+                            {
+                                "body": {
+                                    "id": 19,
+                                    "nodeType": "Block",
+                                    "src": "363:39:0",
+                                    "statements": [
+                                        {
+                                            "expression": {
+                                                "argumentTypes": null,
+                                                "expression": {
+                                                    "argumentTypes": null,
+                                                    "id": 16,
+                                                    "name": "myAdd",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 3,
+                                                    "src": "381:5:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_address",
+                                                        "typeString": "address"
+                                                    }
+                                                },
+                                                "id": 17,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "memberName": "balance",
+                                                "nodeType": "MemberAccess",
+                                                "referencedDeclaration": null,
+                                                "src": "381:13:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            "functionReturnParameters": 15,
+                                            "id": 18,
+                                            "nodeType": "Return",
+                                            "src": "374:20:0"
+                                        }
+                                    ]
+                                },
+                                "documentation": null,
+                                "id": 20,
+                                "implemented": true,
+                                "kind": "function",
+                                "modifiers": [],
+                                "name": "getBalance",
+                                "nodeType": "FunctionDefinition",
+                                "parameters": {
+                                    "id": 12,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [],
+                                    "src": "330:2:0"
+                                },
+                                "returnParameters": {
+                                    "id": 15,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [
+                                        {
+                                            "constant": false,
+                                            "id": 14,
+                                            "name": "",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 20,
+                                            "src": "354:7:0",
+                                            "stateVariable": false,
+                                            "storageLocation": "default",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint256",
+                                                "typeString": "uint256"
+                                            },
+                                            "typeName": {
+                                                "id": 13,
+                                                "name": "uint256",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "354:7:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint256",
+                                                    "typeString": "uint256"
+                                                }
+                                            },
+                                            "value": null,
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "src": "353:9:0"
+                                },
+                                "scope": 49,
+                                "src": "311:91:0",
+                                "stateMutability": "view",
+                                "superFunction": null,
+                                "visibility": "public"
+                            },
+                            {
+                                "constant": false,
+                                "id": 24,
+                                "name": "myMap",
+                                "nodeType": "VariableDeclaration",
+                                "scope": 49,
+                                "src": "460:37:0",
+                                "stateVariable": true,
+                                "storageLocation": "default",
+                                "typeDescriptions": {
+                                    "typeIdentifier": "t_mapping$_t_uint8_$_t_string_storage_$",
+                                    "typeString": "mapping(uint8 => string)"
+                                },
+                                "typeName": {
+                                    "id": 23,
+                                    "keyType": {
+                                        "id": 21,
+                                        "name": "uint8",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "468:5:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_uint8",
+                                            "typeString": "uint8"
+                                        }
+                                    },
+                                    "nodeType": "Mapping",
+                                    "src": "460:24:0",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_mapping$_t_uint8_$_t_string_storage_$",
+                                        "typeString": "mapping(uint8 => string)"
+                                    },
+                                    "valueType": {
+                                        "id": 22,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "477:6:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    }
+                                },
+                                "value": null,
+                                "visibility": "public"
+                            },
+                            {
+                                "body": {
+                                    "id": 33,
+                                    "nodeType": "Block",
+                                    "src": "532:37:0",
+                                    "statements": [
+                                        {
+                                            "expression": {
+                                                "argumentTypes": null,
+                                                "id": 31,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "leftHandSide": {
+                                                    "argumentTypes": null,
+                                                    "baseExpression": {
+                                                        "argumentTypes": null,
+                                                        "id": 27,
+                                                        "name": "myMap",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 24,
+                                                        "src": "543:5:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_mapping$_t_uint8_$_t_string_storage_$",
+                                                            "typeString": "mapping(uint8 => string storage ref)"
+                                                        }
+                                                    },
+                                                    "id": 29,
+                                                    "indexExpression": {
+                                                        "argumentTypes": null,
+                                                        "hexValue": "30",
+                                                        "id": 28,
+                                                        "isConstant": false,
+                                                        "isLValue": false,
+                                                        "isPure": true,
+                                                        "kind": "number",
+                                                        "lValueRequested": false,
+                                                        "nodeType": "Literal",
+                                                        "src": "549:1:0",
+                                                        "subdenomination": null,
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_rational_0_by_1",
+                                                            "typeString": "int_const 0"
+                                                        },
+                                                        "value": "0"
+                                                    },
+                                                    "isConstant": false,
+                                                    "isLValue": true,
+                                                    "isPure": false,
+                                                    "lValueRequested": true,
+                                                    "nodeType": "IndexAccess",
+                                                    "src": "543:8:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_string_storage",
+                                                        "typeString": "string storage ref"
+                                                    }
+                                                },
+                                                "nodeType": "Assignment",
+                                                "operator": "=",
+                                                "rightHandSide": {
+                                                    "argumentTypes": null,
+                                                    "hexValue": "536168696c",
+                                                    "id": 30,
+                                                    "isConstant": false,
+                                                    "isLValue": false,
+                                                    "isPure": true,
+                                                    "kind": "string",
+                                                    "lValueRequested": false,
+                                                    "nodeType": "Literal",
+                                                    "src": "554:7:0",
+                                                    "subdenomination": null,
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_stringliteral_a8a8df289de5f7cdff8aada30f368df5bf3ebdf98a0fba1a280751f16e880f08",
+                                                        "typeString": "literal_string \"Sahil\""
+                                                    },
+                                                    "value": "Sahil"
+                                                },
+                                                "src": "543:18:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_string_storage",
+                                                    "typeString": "string storage ref"
+                                                }
+                                            },
+                                            "id": 32,
+                                            "nodeType": "ExpressionStatement",
+                                            "src": "543:18:0"
+                                        }
+                                    ]
+                                },
+                                "documentation": null,
+                                "id": 34,
+                                "implemented": true,
+                                "kind": "function",
+                                "modifiers": [],
+                                "name": "initMap",
+                                "nodeType": "FunctionDefinition",
+                                "parameters": {
+                                    "id": 25,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [],
+                                    "src": "522:2:0"
+                                },
+                                "returnParameters": {
+                                    "id": 26,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [],
+                                    "src": "532:0:0"
+                                },
+                                "scope": 49,
+                                "src": "506:63:0",
+                                "stateMutability": "nonpayable",
+                                "superFunction": null,
+                                "visibility": "public"
+                            },
+                            {
+                                "body": {
+                                    "id": 47,
+                                    "nodeType": "Block",
+                                    "src": "637:37:0",
+                                    "statements": [
+                                        {
+                                            "expression": {
+                                                "argumentTypes": null,
+                                                "id": 45,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": false,
+                                                "lValueRequested": false,
+                                                "leftHandSide": {
+                                                    "argumentTypes": null,
+                                                    "baseExpression": {
+                                                        "argumentTypes": null,
+                                                        "id": 41,
+                                                        "name": "myMap",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 24,
+                                                        "src": "648:5:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_mapping$_t_uint8_$_t_string_storage_$",
+                                                            "typeString": "mapping(uint8 => string storage ref)"
+                                                        }
+                                                    },
+                                                    "id": 43,
+                                                    "indexExpression": {
+                                                        "argumentTypes": null,
+                                                        "id": 42,
+                                                        "name": "key",
+                                                        "nodeType": "Identifier",
+                                                        "overloadedDeclarations": [],
+                                                        "referencedDeclaration": 36,
+                                                        "src": "654:3:0",
+                                                        "typeDescriptions": {
+                                                            "typeIdentifier": "t_uint8",
+                                                            "typeString": "uint8"
+                                                        }
+                                                    },
+                                                    "isConstant": false,
+                                                    "isLValue": true,
+                                                    "isPure": false,
+                                                    "lValueRequested": true,
+                                                    "nodeType": "IndexAccess",
+                                                    "src": "648:10:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_string_storage",
+                                                        "typeString": "string storage ref"
+                                                    }
+                                                },
+                                                "nodeType": "Assignment",
+                                                "operator": "=",
+                                                "rightHandSide": {
+                                                    "argumentTypes": null,
+                                                    "id": 44,
+                                                    "name": "value",
+                                                    "nodeType": "Identifier",
+                                                    "overloadedDeclarations": [],
+                                                    "referencedDeclaration": 38,
+                                                    "src": "661:5:0",
+                                                    "typeDescriptions": {
+                                                        "typeIdentifier": "t_string_memory_ptr",
+                                                        "typeString": "string memory"
+                                                    }
+                                                },
+                                                "src": "648:18:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_string_storage",
+                                                    "typeString": "string storage ref"
+                                                }
+                                            },
+                                            "id": 46,
+                                            "nodeType": "ExpressionStatement",
+                                            "src": "648:18:0"
+                                        }
+                                    ]
+                                },
+                                "documentation": null,
+                                "id": 48,
+                                "implemented": true,
+                                "kind": "function",
+                                "modifiers": [],
+                                "name": "initMapUser",
+                                "nodeType": "FunctionDefinition",
+                                "parameters": {
+                                    "id": 39,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [
+                                        {
+                                            "constant": false,
+                                            "id": 36,
+                                            "name": "key",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 48,
+                                            "src": "598:9:0",
+                                            "stateVariable": false,
+                                            "storageLocation": "default",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_uint8",
+                                                "typeString": "uint8"
+                                            },
+                                            "typeName": {
+                                                "id": 35,
+                                                "name": "uint8",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "598:5:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_uint8",
+                                                    "typeString": "uint8"
+                                                }
+                                            },
+                                            "value": null,
+                                            "visibility": "internal"
+                                        },
+                                        {
+                                            "constant": false,
+                                            "id": 38,
+                                            "name": "value",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 48,
+                                            "src": "609:19:0",
+                                            "stateVariable": false,
+                                            "storageLocation": "memory",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_string_memory_ptr",
+                                                "typeString": "string"
+                                            },
+                                            "typeName": {
+                                                "id": 37,
+                                                "name": "string",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "609:6:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_string_storage_ptr",
+                                                    "typeString": "string"
+                                                }
+                                            },
+                                            "value": null,
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "src": "597:32:0"
+                                },
+                                "returnParameters": {
+                                    "id": 40,
+                                    "nodeType": "ParameterList",
+                                    "parameters": [],
+                                    "src": "637:0:0"
+                                },
+                                "scope": 49,
+                                "src": "577:97:0",
+                                "stateMutability": "nonpayable",
+                                "superFunction": null,
+                                "visibility": "public"
+                            }
+                        ],
+                        "scope": 50,
+                        "src": "95:582:0"
+                    }
+                ],
+                "src": "33:646:0"
+            },
+            "id": 0
+        }
+    }
+}

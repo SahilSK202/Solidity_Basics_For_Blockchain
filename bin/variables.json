@@ -1,0 +1,579 @@
+{
+    "contractName": "variables",
+    "abi": [
+        {
+            "constant": false,
+            "inputs": [],
+            "name": "goLeft",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "constant": false,
+            "inputs": [],
+            "name": "goRight",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "choice",
+            "outputs": [
+                {
+                    "name": "",
+                    "type": "uint8"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": false,
+            "inputs": [],
+            "name": "goUp",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "constant": false,
+            "inputs": [],
+            "name": "goDown",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        }
+    ],
+    "metadata": "{\"compiler\":{\"version\":\"0.5.0+commit.1d4f565a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[],\"name\":\"goLeft\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"goRight\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"choice\",\"outputs\":[{\"name\":\"\",\"type\":\"uint8\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"goUp\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"goDown\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"d:/MyBooks/BlockChain/Tutorial/04_Enum.sol\":\"variables\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"d:/MyBooks/BlockChain/Tutorial/04_Enum.sol\":{\"keccak256\":\"0xeae16ab0833be9171974bb8ce0a278d817e4da90345efd17d2cca08c4fc4b320\",\"urls\":[\"bzzr://280d61924ee57737ae660971d73595b41df7052c953b3df1e97820ce07d79f01\"]}},\"version\":1}",
+    "bytecode": "608060405234801561001057600080fd5b50610185806100206000396000f3fe60806040526004361061006c5763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663621a247e81146100715780636b53dc4f1461008857806398f42fe31461009d578063d4eb40b0146100d6578063eb4832ff146100eb575b600080fd5b34801561007d57600080fd5b50610086610100565b005b34801561009457600080fd5b50610086610117565b3480156100a957600080fd5b506100b261012b565b604051808260038111156100c257fe5b60ff16815260200191505060405180910390f35b3480156100e257600080fd5b50610086610134565b3480156100f757600080fd5b50610086610146565b600080546002919060ff19166001835b0217905550565b600080546003919060ff1916600183610110565b60005460ff1681565b60008054819060ff1916600182610110565b600080546001919060ff1916828061011056fea165627a7a7230582010bafe222f3d7a37c4a9cb6f909689f3ff788001a23f16c65254cc843bf09d7a0029",
+    "deployedBytecode": "60806040526004361061006c5763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663621a247e81146100715780636b53dc4f1461008857806398f42fe31461009d578063d4eb40b0146100d6578063eb4832ff146100eb575b600080fd5b34801561007d57600080fd5b50610086610100565b005b34801561009457600080fd5b50610086610117565b3480156100a957600080fd5b506100b261012b565b604051808260038111156100c257fe5b60ff16815260200191505060405180910390f35b3480156100e257600080fd5b50610086610134565b3480156100f757600080fd5b50610086610146565b600080546002919060ff19166001835b0217905550565b600080546003919060ff1916600183610110565b60005460ff1681565b60008054819060ff1916600182610110565b600080546001919060ff1916828061011056fea165627a7a7230582010bafe222f3d7a37c4a9cb6f909689f3ff788001a23f16c65254cc843bf09d7a0029",
+    "sourceMap": "122:581:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;122:581:0;;;;;;;",
+    "deployedSourceMap": "122:581:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;548:71;;8:9:-1;5:2;;;30:1;27;20:12;5:2;548:71:0;;;;;;627:73;;8:9:-1;5:2;;;30:1;27;20:12;5:2;627:73:0;;;;358:27;;8:9:-1;5:2;;;30:1;27;20:12;5:2;358:27:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;394:67;;8:9:-1;5:2;;;30:1;27;20:12;5:2;394:67:0;;;;469:71;;8:9:-1;5:2;;;30:1;27;20:12;5:2;469:71:0;;;;548;584:6;:27;;593:18;;584:6;-1:-1:-1;;584:27:0;;593:18;584:27;;;;;;548:71::o;627:73::-;664:6;:28;;673:19;;664:6;-1:-1:-1;;664:28:0;;673:19;664:28;;358:27;;;;;;:::o;394:67::-;437:16;428:25;;437:16;;-1:-1:-1;;428:25:0;;437:16;428:25;;469:71;505:6;:27;;514:18;;505:6;-1:-1:-1;;505:27:0;514:18;;505:27;",
+    "sourcePath": "d:/MyBooks/BlockChain/Tutorial/04_Enum.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.5.0+commit.1d4f565a"
+    },
+    "ast": {
+        "absolutePath": "d:/MyBooks/BlockChain/Tutorial/04_Enum.sol",
+        "exportedSymbols": {
+            "variables": [
+                46
+            ]
+        },
+        "id": 47,
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 1,
+                "literals": [
+                    "solidity",
+                    "^",
+                    "0.5",
+                    ".0"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "33:23:0"
+            },
+            {
+                "id": 2,
+                "literals": [
+                    "solidity",
+                    "^",
+                    "0.5",
+                    ".0"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "95:23:0"
+            },
+            {
+                "baseContracts": [],
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "documentation": null,
+                "fullyImplemented": true,
+                "id": 46,
+                "linearizedBaseContracts": [
+                    46
+                ],
+                "name": "variables",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "canonicalName": "variables.Actionchoices",
+                        "id": 7,
+                        "members": [
+                            {
+                                "id": 3,
+                                "name": "up",
+                                "nodeType": "EnumValue",
+                                "src": "297:2:0"
+                            },
+                            {
+                                "id": 4,
+                                "name": "down",
+                                "nodeType": "EnumValue",
+                                "src": "310:4:0"
+                            },
+                            {
+                                "id": 5,
+                                "name": "left",
+                                "nodeType": "EnumValue",
+                                "src": "325:4:0"
+                            },
+                            {
+                                "id": 6,
+                                "name": "right",
+                                "nodeType": "EnumValue",
+                                "src": "340:5:0"
+                            }
+                        ],
+                        "name": "Actionchoices",
+                        "nodeType": "EnumDefinition",
+                        "src": "267:85:0"
+                    },
+                    {
+                        "constant": false,
+                        "id": 9,
+                        "name": "choice",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 46,
+                        "src": "358:27:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_Actionchoices_$7",
+                            "typeString": "enum variables.Actionchoices"
+                        },
+                        "typeName": {
+                            "contractScope": null,
+                            "id": 8,
+                            "name": "Actionchoices",
+                            "nodeType": "UserDefinedTypeName",
+                            "referencedDeclaration": 7,
+                            "src": "358:13:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_enum$_Actionchoices_$7",
+                                "typeString": "enum variables.Actionchoices"
+                            }
+                        },
+                        "value": null,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 17,
+                            "nodeType": "Block",
+                            "src": "417:44:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "argumentTypes": null,
+                                        "id": 15,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "argumentTypes": null,
+                                            "id": 12,
+                                            "name": "choice",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 9,
+                                            "src": "428:6:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_enum$_Actionchoices_$7",
+                                                "typeString": "enum variables.Actionchoices"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "argumentTypes": null,
+                                            "expression": {
+                                                "argumentTypes": null,
+                                                "id": 13,
+                                                "name": "Actionchoices",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 7,
+                                                "src": "437:13:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_type$_t_enum$_Actionchoices_$7_$",
+                                                    "typeString": "type(enum variables.Actionchoices)"
+                                                }
+                                            },
+                                            "id": 14,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": true,
+                                            "lValueRequested": false,
+                                            "memberName": "up",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": null,
+                                            "src": "437:16:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_enum$_Actionchoices_$7",
+                                                "typeString": "enum variables.Actionchoices"
+                                            }
+                                        },
+                                        "src": "428:25:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_enum$_Actionchoices_$7",
+                                            "typeString": "enum variables.Actionchoices"
+                                        }
+                                    },
+                                    "id": 16,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "428:25:0"
+                                }
+                            ]
+                        },
+                        "documentation": null,
+                        "id": 18,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "goUp",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 10,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "407:2:0"
+                        },
+                        "returnParameters": {
+                            "id": 11,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "417:0:0"
+                        },
+                        "scope": 46,
+                        "src": "394:67:0",
+                        "stateMutability": "nonpayable",
+                        "superFunction": null,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 26,
+                            "nodeType": "Block",
+                            "src": "494:46:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "argumentTypes": null,
+                                        "id": 24,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "argumentTypes": null,
+                                            "id": 21,
+                                            "name": "choice",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 9,
+                                            "src": "505:6:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_enum$_Actionchoices_$7",
+                                                "typeString": "enum variables.Actionchoices"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "argumentTypes": null,
+                                            "expression": {
+                                                "argumentTypes": null,
+                                                "id": 22,
+                                                "name": "Actionchoices",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 7,
+                                                "src": "514:13:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_type$_t_enum$_Actionchoices_$7_$",
+                                                    "typeString": "type(enum variables.Actionchoices)"
+                                                }
+                                            },
+                                            "id": 23,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": true,
+                                            "lValueRequested": false,
+                                            "memberName": "down",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": null,
+                                            "src": "514:18:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_enum$_Actionchoices_$7",
+                                                "typeString": "enum variables.Actionchoices"
+                                            }
+                                        },
+                                        "src": "505:27:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_enum$_Actionchoices_$7",
+                                            "typeString": "enum variables.Actionchoices"
+                                        }
+                                    },
+                                    "id": 25,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "505:27:0"
+                                }
+                            ]
+                        },
+                        "documentation": null,
+                        "id": 27,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "goDown",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 19,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "484:2:0"
+                        },
+                        "returnParameters": {
+                            "id": 20,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "494:0:0"
+                        },
+                        "scope": 46,
+                        "src": "469:71:0",
+                        "stateMutability": "nonpayable",
+                        "superFunction": null,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 35,
+                            "nodeType": "Block",
+                            "src": "573:46:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "argumentTypes": null,
+                                        "id": 33,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "argumentTypes": null,
+                                            "id": 30,
+                                            "name": "choice",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 9,
+                                            "src": "584:6:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_enum$_Actionchoices_$7",
+                                                "typeString": "enum variables.Actionchoices"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "argumentTypes": null,
+                                            "expression": {
+                                                "argumentTypes": null,
+                                                "id": 31,
+                                                "name": "Actionchoices",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 7,
+                                                "src": "593:13:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_type$_t_enum$_Actionchoices_$7_$",
+                                                    "typeString": "type(enum variables.Actionchoices)"
+                                                }
+                                            },
+                                            "id": 32,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": true,
+                                            "lValueRequested": false,
+                                            "memberName": "left",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": null,
+                                            "src": "593:18:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_enum$_Actionchoices_$7",
+                                                "typeString": "enum variables.Actionchoices"
+                                            }
+                                        },
+                                        "src": "584:27:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_enum$_Actionchoices_$7",
+                                            "typeString": "enum variables.Actionchoices"
+                                        }
+                                    },
+                                    "id": 34,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "584:27:0"
+                                }
+                            ]
+                        },
+                        "documentation": null,
+                        "id": 36,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "goLeft",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 28,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "563:2:0"
+                        },
+                        "returnParameters": {
+                            "id": 29,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "573:0:0"
+                        },
+                        "scope": 46,
+                        "src": "548:71:0",
+                        "stateMutability": "nonpayable",
+                        "superFunction": null,
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 44,
+                            "nodeType": "Block",
+                            "src": "653:47:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "argumentTypes": null,
+                                        "id": 42,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "lValueRequested": false,
+                                        "leftHandSide": {
+                                            "argumentTypes": null,
+                                            "id": 39,
+                                            "name": "choice",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 9,
+                                            "src": "664:6:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_enum$_Actionchoices_$7",
+                                                "typeString": "enum variables.Actionchoices"
+                                            }
+                                        },
+                                        "nodeType": "Assignment",
+                                        "operator": "=",
+                                        "rightHandSide": {
+                                            "argumentTypes": null,
+                                            "expression": {
+                                                "argumentTypes": null,
+                                                "id": 40,
+                                                "name": "Actionchoices",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 7,
+                                                "src": "673:13:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_type$_t_enum$_Actionchoices_$7_$",
+                                                    "typeString": "type(enum variables.Actionchoices)"
+                                                }
+                                            },
+                                            "id": 41,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": true,
+                                            "lValueRequested": false,
+                                            "memberName": "right",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": null,
+                                            "src": "673:19:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_enum$_Actionchoices_$7",
+                                                "typeString": "enum variables.Actionchoices"
+                                            }
+                                        },
+                                        "src": "664:28:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_enum$_Actionchoices_$7",
+                                            "typeString": "enum variables.Actionchoices"
+                                        }
+                                    },
+                                    "id": 43,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "664:28:0"
+                                }
+                            ]
+                        },
+                        "documentation": null,
+                        "id": 45,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "goRight",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 37,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "643:2:0"
+                        },
+                        "returnParameters": {
+                            "id": 38,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "653:0:0"
+                        },
+                        "scope": 46,
+                        "src": "627:73:0",
+                        "stateMutability": "nonpayable",
+                        "superFunction": null,
+                        "visibility": "public"
+                    }
+                ],
+                "scope": 47,
+                "src": "122:581:0"
+            }
+        ],
+        "src": "33:672:0"
+    },
+    "functionHashes": {
+        "choice()": "98f42fe3",
+        "goDown()": "eb4832ff",
+        "goLeft()": "621a247e",
+        "goRight()": "6b53dc4f",
+        "goUp()": "d4eb40b0"
+    },
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "77800",
+            "executionCost": "129",
+            "totalCost": "77929"
+        },
+        "external": {
+            "choice()": "473",
+            "goDown()": "20473",
+            "goLeft()": "20374",
+            "goRight()": "20407",
+            "goUp()": "20448"
+        }
+    }
+}
